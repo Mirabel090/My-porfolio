@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirabel | UI/UX Designer & Frontend Developer</title>
+    <meta name="description" content="Mirabel is a freelance UI/UX designer and frontend developer who builds fast, clean and accessible websites.">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="my.css">
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <header class="nav">
+        <nav class="nav-container">
+            <a href="#home" class="nav-logo">Mira<span>bel</span></a>
+
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="menu" id="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ========== HOME ========== -->
+        <section class="home" id="home">
+            <div class="home-text">
+                <p class="badge">Available for work</p>
+                <h1>Hi, I'm <span>Mirabel</span> <i class="fa-regular fa-hand"></i></h1>
+                <h2>Freelance <span>UI/UX Designer &amp; Frontend Developer</span></h2>
+                <p class="intro">I design and build digital products that people love to use: fast, clean and accessible.</p>
+
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">View Services</a>
+                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                </div>
+            </div>
+
+            <div class="home-image">
+                <img src="./img/IMG_20260523_145020_892.jpg" alt="Photo of Mirabel">
+            </div>
+        </section>
+
+        <!-- ========== SERVICES ========== -->
+        <section class="services" id="services">
+            <div class="section-title">
+                <p>What I do</p>
+                <h2>Services</h2>
+            </div>
+
+            <div class="services-grid">
+                <article class="service-card">
+                    <i class="fa-solid fa-desktop"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>From wireframes to polished Figma prototypes. Intuitive, good-looking interfaces that put usability first.</p>
+                </article>
+
+                <article class="service-card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Frontend Development</h3>
+                    <p>Clean, responsive websites built with HTML, CSS and JavaScript that work well on every screen size.</p>
+                </article>
+
+                <article class="service-card">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <h3>Landing Pages</h3>
+                    <p>High-converting pages for apps, businesses and personal brands, designed to get your message across from the first scroll.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ========== ABOUT ========== -->
+        <section class="about" id="about">
+            <div class="section-title">
+                <p>Who I am</p>
+                <h2>About Me</h2>
+            </div>
+
+            <div class="about-content">
+                <p>I'm Mirabel, a freelance designer and frontend developer based in Kano with two years of experience. I enjoy clean design and clean code.</p>
+                <p>I believe great interfaces are invisible: they stay out of the user's way. My work is fast, accessible and built to last.</p>
+
+                <h3>Stack &amp; Tools</h3>
+                <ul class="skills">
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Tailwind CSS</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ========== CONTACT ========== -->
+        <section class="contact" id="contact">
+            <div class="section-title">
+                <p>Get in Touch</p>
+                <h2>Let's work together</h2>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <p>I'm open to UI/UX and frontend projects, short or long term. Landing page, full redesign, or something new. Let's talk.</p>
+
+                    <a href="mailto:miraeke006@gmail.com" class="contact-link">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>miraeke006@gmail.com</span>
+                    </a>
+
+                    <!-- Replace with your real LinkedIn profile URL -->
+                    <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-NAME" class="contact-link" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
+
+                    <a href="https://github.com/Mirabel090" class="contact-link" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github"></i>
+                        <span>github.com/Mirabel090</span>
+                    </a>
+                </div>
+
+                <!-- Replace YOUR_FORM_ID with the ID from formspree.io (free) so the form actually sends emails -->
+                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project inquiry" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <p>&copy; 2026 Mirabel. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
